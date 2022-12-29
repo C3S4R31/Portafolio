@@ -124,18 +124,48 @@ body{
     filter: invert();    
 }
 
+/*HABILIDADES=====================================*/
+
 .skills{
     width: 100%;
     display: flex;    
     flex-direction: column;
     align-items: center;
-    padding: 2rem;
+    padding: 2rem 0;
 }
 
 .skills__titulo{
-    font-size: 16px;
+    font-size: 20px;
     font-weight: 700;
-    color: #fff;
+    margin-bottom: 0.5rem;
+    color: var(--text-color);
+}
+
+.skills__bar{
+    width: 40%;
+    height: .3rem;
+    background-color: var(--primary-color);
+    box-shadow: 0 0 10px 0 var(--primary-color);
+}
+
+.skills__container{
+    width: 100%; 
+    margin-top: 2.5rem;   
+}
+
+.skills__list{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    row-gap: 2rem;   
+}
+
+.skills__item{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: var(--text-color);
+    font-weight: 500;
+    gap: 0.3rem;
 }
 
 
