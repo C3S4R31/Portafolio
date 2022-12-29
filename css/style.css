@@ -156,16 +156,26 @@ body{
 .skills__list{
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
+    justify-items: center;
+    align-content: center;
     row-gap: 2rem;   
 }
 
 .skills__item{
+    width: 80%;
     display: flex;
     flex-direction: column;
     align-items: center;
     color: var(--text-color);
     font-weight: 500;
-    gap: 0.3rem;
+    gap: 0.5rem;
+    padding: 0.5rem 0;
+    background-color: var(--bg-card-color);
+    border-radius: 10px;
+}
+
+.skills__item img{
+    width: 40%
 }
 
 
