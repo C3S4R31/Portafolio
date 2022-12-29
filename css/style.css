@@ -68,7 +68,7 @@ body{
 }
 
 .titulo__nombre{
-    font-size: 16px;
+    font-size: 20px;
     font-weight: 700;
     color: #182748;
 }
@@ -79,11 +79,12 @@ body{
 }
 
 .titulo__social{
-    width: 90%;
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
-    row-gap: 1rem;
+    width: 70%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    justify-items: center;
+    grid-row-gap: 1rem;
     background-color: firebrick;
 }
 
@@ -98,6 +99,7 @@ body{
     font-weight: 500;
     background-color: #4B89DC;
     padding: .5em 1.15em;
+    border-radius: .5rem;
 }
 
 .social-link i{
