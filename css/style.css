@@ -66,16 +66,16 @@ body{
     width: 35%;
     margin: 2rem 0;
     border-radius: 50%;
-    box-shadow: 0 0 0 10px var(--primary-color), 0 0 0 10px rgba(39, 179, 154, 50%);
+    box-shadow: 0 0 0 10px var(--primary-color), 0 0 0 10px var(--primary-color), 0 0 0 10px rgba(39, 179, 154, 50%);
     animation: circle-wave 2s linear infinite;
 }
 
 @keyframes circle-wave {
     from {
-        box-shadow: 0 0 0 10px var(--primary-color), 0 0 0 10px rgba(39, 179, 154, 50%);        
+        box-shadow: 0 0 0 10px var(--primary-color), 0 0 10px 10px var(--primary-color), 0 0 0 10px rgba(39, 179, 154, 50%);        
     }
     to {
-        box-shadow: 0 0 0 10px var(--primary-color), 0 0 0 30px rgba(39, 179, 154, 0%);        
+        box-shadow: 0 0 0 10px var(--primary-color), 0 0 10px 10px var(--primary-color), 0 0 0 30px rgba(39, 179, 154, 0%);        
     }
 }
 
@@ -136,6 +136,7 @@ body{
     font-size: 20px;
     font-weight: 700;
     margin-bottom: 0.5rem;
+    line-height: 1.5;
     color: var(--text-color);
 }
 
@@ -199,6 +200,52 @@ body{
 .skills__item img{
     width: 45%
 }
+
+/*FORMACION ACADEMICA=====================================*/
+.academic{
+    width: 100%; 
+    margin-top: 2.5rem;   
+}
+
+.academic__list{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+}
+
+.academic__item{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.academic__item-img{
+    width: 80%;
+    background-color: #FFFFFF;
+    border-radius: 1rem;
+    border: 0.5rem solid var(--primary-color);/*Revisar el borde de las esquqinas del contorno y de la imagen*/
+    margin-bottom: 0.5rem;
+}
+
+.academic__item-title{
+    color: var(--primary-color);
+    font-size: 1.15rem;
+    font-weight: 600;
+    text-align: center;
+}
+
+.academic__item-text{
+    color: var(--text-color);
+    text-align: center;
+    line-height: 1.5;
+}
+
 
 
 
