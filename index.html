@@ -1,98 +1,190 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <!-- <meta name="viewport" content="width=device-width, initial-scale=1.0"> -->
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no"> 
-    <link rel="stylesheet" href="css/reset.css">
-    <link rel="stylesheet" href="css/style.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&display=swap" rel="stylesheet">
-    <script src="https://kit.fontawesome.com/9bb344fd18.js" crossorigin="anonymous"></script>
-    <title>Document</title>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <!-- <meta name="viewport" content="width=device-width, initial-scale=1.0"> -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+  <link rel="stylesheet" href="css/reset.css">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&display=swap"
+    rel="stylesheet">
+  <script src="https://kit.fontawesome.com/9bb344fd18.js" crossorigin="anonymous"></script>
+  <title>Document</title>
 </head>
+
 <body>
-    <header class="header">
-        <img class="header__img" src="assets/header_img.png" alt="LOGO">
-    </header>   
+  <header class="header">
+    <img class="header__img" src="assets/header_img.png" alt="LOGO">
+  </header>
 
-    <main class="main">
-        <section class="titulo">
-            <div class="titulo__img-container">
-                <img class="titulo__img" src="assets/profile.png" alt="">                
+  <main class="main">
+    <section class="titulo">
+      <div class="titulo__img-container">
+        <img class="titulo__img" src="assets/profile.png" alt="">
+      </div>
+
+      <div class="titulo__descripcion">
+        <h2 class="titulo__nombre">CÉSAR ÁVILA</h2>
+        <p class="titulo__texto">Ingeniero Electrónico | Front-end Developer</p>
+      </div>
+      <ul class="titulo__social">
+        <a href="" class="social-link"><img src="assets/icon_linkedin.svg" alt="Linkedin"></a>
+        <a href="" class="social-link"><img src="assets/icon_instagram.svg" alt="Instagram"></a>
+        <a href="" class="social-link"><img src="assets/icon_github.svg" alt="Github"></a>
+        <a href="" class="social-link"><img src="assets/icon_cv.svg" alt="Curriculum"></a>
+      </ul>
+    </section>
+
+    <section class="seccion">
+      <h2 class="seccion__titulo">SOBRE MI</h2>
+      <div class="seccion__bar"></div>
+      <div class="about">
+        <p class="about__texto"><strong>Hola! Mi nombre es César Ávila.</strong> Soy una persona comprometida con gran
+          motivación para continuar perfeccionando habilidades y crecer profesionalmente. Apasionado por la tecnología e
+          innovación, en constante aprendizaje sobre el desarrollo web y sus diferentes herramientas. Ingeniero
+          Electrónico graduado con conocimientos en desarrollo de software y telecomunicaciones. Actualmente, soy
+          estudiante del programa ONE de Oracle Next Education en conjunto con Alura Latam.
+          <br><br>
+          Mi actual enfoque es el desarrollo web Front-end, aspirando a trabajar en proyectos que me brinden experiencia
+          y nuevos conocimientos del área, proyectándome así a trabajar en tecnología y consolidar mi vida profesional.
+          Confío plenamente en mi capacidad de aplicar mis conocimientos en el área de trabajo que se me designe
+          teniendo un buen desempeño de actividades necesarias.
+        </p>
+      </div>
+    </section>
+
+    <section class="seccion">
+      <h2 class="seccion__titulo">HABILIDADES</h2>
+      <div class="seccion__bar"></div>
+      <div class="skills">
+        <ul class="skills__list">
+          <li class="skills__item"><img src="assets/icon_html.svg" alt="">HTML5</li>
+          <li class="skills__item"><img src="assets/icon_css.svg" alt="">CSS</li>
+          <li class="skills__item"><img src="assets/icon_javascript.svg" alt="">JavaScript</li>
+          <li class="skills__item"><img src="assets/icon_react.svg" alt="">React</li>
+          <li class="skills__item"><img src="assets/icon_java.svg" alt="">Java</li>
+          <li class="skills__item"><img src="assets/icon_python.svg" alt="">Python</li>
+        </ul>
+      </div>
+    </section>
+
+    <section class="seccion card">
+      <h2 class="seccion__titulo">FORMACIÓN<br>ACADÉMICA</h2>
+      <div class="seccion__bar"></div>
+      <div class="academic">
+        <ul class="academic__list">
+          <li class="academic__item">
+            <img class="academic__item-img" src="assets/logo_santo.png" alt="">
+            <h4 class="academic__item-title">INGENIERÍA ELECTRÓNICA</h4>
+            <p class="academic__item-text">Universidad Santo Tomás Seccional Tunja<br>2021</p>
+          </li>
+          <li class="academic__item">
+            <img class="academic__item-img" src="assets/logo_sena.png" alt="">
+            <h4 class="academic__item-title">TECNÓLOGO EN DESARROLLO DE VIDEOJUEGOS</h4>
+            <p class="academic__item-text">Servicio Nacional de Aprendizaje SENA<br>2016</p>
+          </li>
+          <li class="academic__item">
+            <img class="academic__item-img" src="assets/logo_misiontic.png" alt="">
+            <h4 class="academic__item-title">PROGRAMA MISIONTIC 2022</h4>
+            <p class="academic__item-text">MinTic | Universidad del Norte - Barranquilla<br>2022</p>
+          </li>
+          <li class="academic__item">
+            <img class="academic__item-img" src="assets/logo_alura.png" alt="">
+            <h4 class="academic__item-title">ONE NEXT EDUCATION</h4>
+            <p class="academic__item-text">Orale | Alura Latam<br>2022</p>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <section class="seccion">
+      <h2 class="seccion__titulo">EXPERIENCIA<br>PROFESIONAL</h2>
+      <div class="seccion__bar"></div>
+      <div class="experience">
+        <ul class="experience__list">
+          <li class="experience__item">
+            <img class="experience__item-img" src="assets/pagina-kit.png" alt="">
+            <h4 class="experience__item-title">SITIO WEB "KIT DE ELECTRÓNICA"</h4>
+            <p class="experience__item-text">Pasantia Empresarial | Gobernación de Boyacá</p>
+            <div class="item__tools">
+              <ul class="item__tools-list">
+                <li class="item__tools-item"><img class="item__tools-img" src="assets/icon_html.svg" alt=""></li>
+                <li class="item__tools-item"><img class="item__tools-img" src="assets/icon_css.svg" alt=""></li>
+                <li class="item__tools-item"><img class="item__tools-img" src="assets/icon_javascript.svg" alt=""></li>
+              </ul>
             </div>
-        
-            <div class="titulo__descripcion">
-                <h2 class="titulo__nombre">CÉSAR ÁVILA</h2>
-                <p class="titulo__texto">Ingeniero Electrónico | Front-end Developer</p>
+            <div class="experience__item-container">
+              <a class="experience__item-button" href="">Demo</a>
+              <a class="experience__item-button secondary" href="">Repositorio</a>
             </div>
-            <ul class="titulo__social">                
-                <a href="" class="social-link"><img src="assets/icon_linkedin.svg" alt="Linkedin"></a>
-                <a href="" class="social-link"><img src="assets/icon_instagram.svg" alt="Instagram"></a>                
-                <a href="" class="social-link"><img src="assets/icon_github.svg" alt="Github"></a>
-                <a href="" class="social-link"><img src="assets/icon_cv.svg" alt="Curriculum"></a>                
-            </ul>
-        </section>  
+          </li>
 
-        <section class="seccion">
-            <h2 class="seccion__titulo">SOBRE MI</h2>
-            <div class="seccion__bar"></div>
-            <div class="about">
-                <p class="about__texto"><strong>Hola! Mi nombre es César Ávila.</strong> Soy una persona comprometida con gran motivación para continuar perfeccionando habilidades y crecer profesionalmente. Apasionado por la tecnología e innovación, en constante aprendizaje sobre el desarrollo web y sus diferentes herramientas. Ingeniero Electrónico graduado con conocimientos en desarrollo de software y telecomunicaciones. Actualmente, soy estudiante del programa ONE de Oracle Next Education en conjunto con Alura Latam.
-                    <br><br>
-                    Mi actual enfoque es el desarrollo web Front-end, aspirando a trabajar en proyectos que me brinden experiencia y nuevos conocimientos del área, proyectándome así a trabajar en tecnología y consolidar mi vida profesional. Confío plenamente en mi capacidad de aplicar mis conocimientos en el área de trabajo que se me designe teniendo un buen desempeño de actividades necesarias.
-                </p>
-            </div>            
-        </section>
-        
-        <section class="seccion">
-            <h2 class="seccion__titulo">HABILIDADES</h2>
-            <div class="seccion__bar"></div>
-            <div class="skills">
-                <ul class="skills__list">
-                    <li class="skills__item"><img src="assets/icon_html.svg" alt="">HTML5</li>
-                    <li class="skills__item"><img src="assets/icon_css.svg" alt="">CSS</li>
-                    <li class="skills__item"><img src="assets/icon_javascript.svg" alt="">JavaScript</li>
-                    <li class="skills__item"><img src="assets/icon_react.svg" alt="">React</li>
-                    <li class="skills__item"><img src="assets/icon_java.svg" alt="">Java</li>
-                    <li class="skills__item"><img src="assets/icon_python.svg" alt="">Python</li>
-                </ul>
+          <li class="experience__item">
+            <img class="experience__item-img" src="assets/pagina-encriptador.png" alt="">
+            <h4 class="experience__item-title">ENCRIPTADOR DE TEXTO</h4>
+            <p class="experience__item-text">Challenge Bootcamp One Next Education</p>
+            <div class="item__tools">
+              <ul class="item__tools-list">
+                <li class="item__tools-item"><img class="item__tools-img" src="assets/icon_html.svg" alt=""></li>
+                <li class="item__tools-item"><img class="item__tools-img" src="assets/icon_css.svg" alt=""></li>
+                <li class="item__tools-item"><img class="item__tools-img" src="assets/icon_javascript.svg" alt=""></li>
+              </ul>
             </div>
-        </section>
+            <div class="experience__item-container">
+              <a class="experience__item-button" href="">Demo</a>
+              <a class="experience__item-button secondary" href="">Repositorio</a>
+            </div>
+          </li>
 
-        <section class="seccion card">
-            <h2 class="seccion__titulo">FORMACIÓN<br>ACADÉMICA</h2>
-            <div class="seccion__bar"></div>
-            <div class="academic">
-                <ul class="academic__list">
-                    <li class="academic__item">
-                        <img class="academic__item-img" src="assets/logo_santo.png" alt="">
-                        <h4 class="academic__item-title">INGENIERÍA ELECTRÓNICA</h4>
-                        <p class="academic__item-text">Universidad Santo Tomás Seccional Tunja<br>2021</p>
-                    </li>
-                    <li class="academic__item">
-                        <img class="academic__item-img" src="assets/logo_sena.png" alt="">
-                        <h4 class="academic__item-title">TECNÓLOGO EN DESARROLLO DE VIDEOJUEGOS</h4>
-                        <p class="academic__item-text">Servicio Nacional de Aprendizaje SENA<br>2016</p>
-                    </li>
-                    <li class="academic__item">
-                        <img class="academic__item-img" src="assets/logo_misiontic.png" alt="">
-                        <h4 class="academic__item-title">PROGRAMA MISIONTIC 2022</h4>
-                        <p class="academic__item-text">MinTic | Universidad del Norte - Barranquilla<br>2022</p>
-                    </li>
-                    <li class="academic__item">
-                        <img class="academic__item-img" src="assets/logo_alura.png" alt="">
-                        <h4 class="academic__item-title">ONE NEXT EDUCATION</h4>
-                        <p class="academic__item-text">Orale | Alura Latam<br>2022</p>
-                    </li>
-                </ul>                
-            </div>            
-        </section>
+          <li class="experience__item">
+            <img class="experience__item-img" src="assets/pagina-ahorcado.png" alt="">
+            <h4 class="experience__item-title">JUEGO DEL AHORCADO</h4>
+            <p class="experience__item-text">Challenge Bootcamp One Next Education</p>
+            <div class="item__tools">
+              <ul class="item__tools-list">
+                <li class="item__tools-item"><img class="item__tools-img" src="assets/icon_html.svg" alt=""></li>
+                <li class="item__tools-item"><img class="item__tools-img" src="assets/icon_css.svg" alt=""></li>
+                <li class="item__tools-item"><img class="item__tools-img" src="assets/icon_javascript.svg" alt=""></li>
+              </ul>
+            </div>
+            <div class="experience__item-container">
+              <a class="experience__item-button" href="">Demo</a>
+              <a class="experience__item-button secondary" href="">Repositorio</a>
+            </div>
+          </li>
 
+          <li class="experience__item">
+            <img class="experience__item-img" src="assets/pagina-insta.png" alt="">
+            <h4 class="experience__item-title">SITIO WEB INSTAYA</h4>
+            <p class="experience__item-text">Challenge Bootcamp MisionTIC</p>
+            <div class="item__tools">
+              <ul class="item__tools-list">
+                <li class="item__tools-item"><img class="item__tools-img" src="assets/icon_html.svg" alt=""></li>
+                <li class="item__tools-item"><img class="item__tools-img" src="assets/icon_css.svg" alt=""></li>
+                <li class="item__tools-item"><img class="item__tools-img" src="assets/icon_javascript.svg" alt=""></li>
+                <li class="item__tools-item"><img class="item__tools-img" src="assets/icon_react.svg" alt=""></li>
+              </ul>
+            </div>
+            <div class="experience__item-container">
+              <a class="experience__item-button" href="">Demo</a>
+              <a class="experience__item-button secondary" href="">Repositorio</a>
+            </div>
+          </li>
+          
 
-    </main>
+          
+        </ul>
+      </div>
+    </section>
 
-    <footer class="footer">Footer</footer>
+  </main>
+
+  <footer class="footer">Desarrollado por César Ávila | 2022</footer>
 </body>
+
 </html>
