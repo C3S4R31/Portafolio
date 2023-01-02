@@ -1,6 +1,5 @@
 :root {
   --primary-color: #27b39a;
-  --hover-color: #2BC5A9;
   --text-color: #ffffff;
   --bg-color: #1f2325;
   --bg-card-color: #22292f;
@@ -11,6 +10,7 @@
 
 html{
   font-size: 14px;
+  scroll-behavior: smooth;
 }
 
 body {
@@ -28,14 +28,86 @@ body {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 8px 0;
+  padding: 0.5rem 0;
 }
 
-.header__img {
-  margin-left: 0.5rem;
+.header__img,
+.header__toggle{
+  margin: 0 0.5rem;
   height: 100%;
   filter: invert();
 }
+
+.header__toggle{
+  cursor: pointer;
+}
+
+.nav{
+  width: 0;
+  position: absolute;
+  z-index: 1;
+  top: 0;
+  right: 0;
+  margin-top: 48px;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-direction: column;
+  background-color: var(--bg-color);  
+  transition: all 0.5s ease;  
+}
+.nav.activo{
+  width: 100%;
+  box-shadow: 0 5px 5px 0px var(--primary-color);
+}
+
+
+.nav__close{
+  width: 100%;
+  height: 48px;
+  position: absolute;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.nav__close-img{
+  height: 100%;
+  margin-right: 0.5rem;
+  filter: invert();
+  cursor: pointer;
+}
+
+.nav__list{
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+  padding: 2rem 0;    
+}
+
+.nav__link{
+  min-width: 150px;
+  display: block;
+  text-align: center;
+  text-decoration: none;
+  color: var(--text-color);
+  font-weight: 500;
+  padding: 1rem 2rem;
+  border-radius: 0.5rem;
+  background-color: var(--primary-color);
+}
+
+
+
+
+
+
+
+
 
 /*MAIN=============================================================*/
 .main {

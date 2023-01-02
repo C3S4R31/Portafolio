@@ -14,16 +14,29 @@
     href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&display=swap"
     rel="stylesheet">
   <script src="https://kit.fontawesome.com/9bb344fd18.js" crossorigin="anonymous"></script>
-  <title>Document</title>
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+  <title>Portafolio - César Ávila</title>
 </head>
 
 <body>
-  <header class="header">
+  <header class="header" id="main">
     <img class="header__img" src="assets/header_img.png" alt="LOGO">
+    <img class="header__toggle" src="assets/icon_menu.svg">
+    <nav class="nav">      
+      <ul class="nav__list">
+        <li class="nav__item"><a class="nav__link" href="#main">Inicio</a></li>
+        <li class="nav__item"><a class="nav__link" href="#sobremi">Sobre mi</a></li>
+        <li class="nav__item"><a class="nav__link" href="#skills">Habilidades</a></li>
+        <li class="nav__item"><a class="nav__link" href="#academic">Formación</a></li>
+        <li class="nav__item"><a class="nav__link" href="#experience">Experiencia</a></li>
+        <li class="nav__item"><a class="nav__link" href="#contact">Contacto</a></li>
+      </ul>
+    </nav>
+
   </header>
 
   <main class="main">
-    <section class="titulo">
+    <section class="titulo" data-aos="zoom-out">
       <div class="titulo__img-container">
         <img class="titulo__img" src="assets/profile.png" alt="">
       </div>
@@ -32,15 +45,15 @@
         <h2 class="titulo__nombre">CÉSAR ÁVILA</h2>
         <p class="titulo__texto">Ingeniero Electrónico | Front-end Developer</p>
       </div>
-      <ul class="titulo__social">
+      <div class="titulo__social">
         <a href="https://www.linkedin.com/in/cesaravilat/" target="_blank" class="social-link"><img src="assets/icon_linkedin.svg" alt="Linkedin"></a>
         <a href="https://www.instagram.com/cesar.avilat/" target="_blank" class="social-link"><img src="assets/icon_instagram.svg" alt="Instagram"></a>
         <a href="https://github.com/C3S4R31" target="_blank" class="social-link"><img src="assets/icon_github.svg" alt="Github"></a>
         <a href="https://drive.google.com/file/d/1mV4AZaeVQwP4fLsvZJ8PSx0NoxYbpvdE/view?usp=share_link" target="_blank" class="social-link"><img src="assets/icon_cv.svg" alt="Curriculum"></a>
-      </ul>
+      </div>
     </section>
 
-    <section class="seccion">
+    <section class="seccion" id="sobremi" data-aos="fade-up">
       <h2 class="seccion__titulo">SOBRE MI</h2>
       <div class="seccion__bar"></div>
       <div class="about">
@@ -58,7 +71,7 @@
       </div>
     </section>
 
-    <section class="seccion">
+    <section class="seccion" id="skills" data-aos="fade-up">
       <h2 class="seccion__titulo">HABILIDADES</h2>
       <div class="seccion__bar"></div>
       <div class="skills">
@@ -73,7 +86,7 @@
       </div>
     </section>
 
-    <section class="seccion card">
+    <section class="seccion card" id="academic" data-aos="fade-up">
       <h2 class="seccion__titulo">FORMACIÓN ACADÉMICA</h2>
       <div class="seccion__bar"></div>
       <div class="academic">
@@ -102,7 +115,7 @@
       </div>
     </section>
 
-    <section class="seccion">
+    <section class="seccion" id="experience" data-aos="fade-up">
       <h2 class="seccion__titulo">EXPERIENCIA PROFESIONAL</h2>
       <div class="seccion__bar"></div>
       <div class="experience">
@@ -181,7 +194,7 @@
       </div>
     </section>
 
-    <section class="seccion">
+    <section class="seccion" id="contact" data-aos="fade-up">
       <h2 class="seccion__titulo">CONTACTO</h2>
       <div class="seccion__bar"></div>
       <div class="contact">
@@ -200,6 +213,9 @@
 
   <footer class="footer">&#169; 2022 | Desarrollado por César Ávila</footer>
   <script src="js/email.js"></script>
+  <script src="js/app.js"></script>
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script>AOS.init();</script>
 </body>
 
 </html>
