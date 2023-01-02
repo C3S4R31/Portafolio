@@ -14,7 +14,7 @@ html {
 }
 
 body {
-  width: 100vw;
+  width: 100%;
   min-height: 100vh;
   background: var(--bg-color);
   display: grid;
@@ -268,7 +268,7 @@ body {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  gap: 2rem;
+  gap: 5rem;
 }
 
 .experience__item {
