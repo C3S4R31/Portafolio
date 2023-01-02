@@ -152,8 +152,8 @@
               </ul>
             </div>
             <div class="experience__item-container">
-              <a class="experience__item-button" href="" target="_blank">Demo</a>
-              <a class="experience__item-button secondary" href="" target="_blank">Repositorio</a>
+              <a class="experience__item-button" href="https://c3s4r31.github.io/Juego-Ahorcado/" target="_blank">Demo</a>
+              <a class="experience__item-button secondary" href="https://github.com/C3S4R31/Juego-Ahorcado" target="_blank">Repositorio</a>
             </div>
           </li>
 
@@ -170,8 +170,8 @@
               </ul>
             </div>
             <div class="experience__item-container">
-              <a class="experience__item-button" href="">Demo</a>
-              <a class="experience__item-button secondary" href="">Repositorio</a>
+              <a class="experience__item-button" href="https://github.com/C3S4R31/InstaYa_Front-End">R. Frontend</a>
+              <a class="experience__item-button secondary" href="https://github.com/C3S4R31/InstaYa_Back-End">R. Backend</a>
             </div>
           </li>
           
@@ -181,9 +181,25 @@
       </div>
     </section>
 
+    <section class="seccion">
+      <h2 class="seccion__titulo">CONTACTO</h2>
+      <div class="seccion__bar"></div>
+      <div class="contact">
+        <p class="contact__text">Complete el siguiente formulario y me pondré en contacto con usted lo antes posible.</p>
+        <form id="form" class="contact__form">
+          <input class="contact__form-input" type="text" placeholder="Nombre" name="name" required>
+          <input class="contact__form-input" type="text" placeholder="Email" name="email" required>
+          <textarea class="contact__form-textarea" cols="1" rows="12" placeholder="Mensaje" name="text" required></textarea>
+          <input class="contact__form-btn" type="submit" id="button" value="Enviar">
+          <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+          <script type="text/javascript">emailjs.init('WQl2QJlbZx5bnqcw1')</script>
+        </form>
+      </div>
+    </section>
   </main>
 
-  <footer class="footer">Desarrollado por César Ávila | 2022</footer>
+  <footer class="footer">&#169; 2022 | Desarrollado por César Ávila</footer>
+  <script src="js/email.js"></script>
 </body>
 
 </html>

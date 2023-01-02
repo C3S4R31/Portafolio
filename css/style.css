@@ -5,11 +5,10 @@
   --bg-card-color: #22292f;
 }
 * {
-  transition: all 0.5s ease-in-out;
   box-sizing: border-box;
 }
 
-html {
+html{
   font-size: 14px;
 }
 
@@ -20,8 +19,6 @@ body {
   display: grid;
   grid-template-rows: auto 1fr auto;
   font-family: "Poppins", sans-serif;
-  /* font-size: 14px; */
-  /* overflow: hidden;            */
 }
 
 /*HEADER=============================================================*/
@@ -99,7 +96,7 @@ body {
 }
 
 .titulo__nombre {
-  font-size: 22px;
+  font-size: 1.375rem;
   font-weight: 700;
   color: var(--text-color);
 }
@@ -139,7 +136,7 @@ body {
 }
 
 .seccion__titulo {
-  font-size: 20px;
+  font-size: 1.25rem;
   font-weight: 700;
   margin-bottom: 0.5rem;
   line-height: 1.5;
@@ -338,7 +335,8 @@ body {
   font-weight: 500;
   color: var(--text-color);
   background-color: var(--primary-color);
-  padding: 1rem 1rem;
+  min-width: 100px;
+  padding: 1rem 2rem;
   border-radius: 0.5rem;
 }
 .secondary {
@@ -346,6 +344,55 @@ body {
   background-color: unset;
   border: 1px solid var(--primary-color);
 }
+
+/*CONTACTO=====================================*/
+.contact{
+  width: 100%;
+  margin-top: 1.5rem;
+}
+
+.contact__text{
+  color: var(--text-color);
+  text-align: center;
+  line-height: 1.5;
+  padding: 0 1.5rem;
+  margin-bottom: 1.5rem;
+}
+
+.contact__form{
+  width: 80%;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+  /* background-color: red; */
+}
+
+.contact__form-input,
+.contact__form-textarea{
+  width: 100%;
+  font-size: 1rem;
+  border-radius: 0.5rem;
+  padding: 1rem 1rem;
+  font-weight: 600;  
+}
+
+.contact__form-btn{
+  font-size: 1rem;  
+  font-weight: 500;
+  background-color: var(--primary-color);
+  color: var(--text-color);
+  border: none;
+  min-width: 100px;
+  padding: 1rem 2rem;
+  border-radius: 0.5rem;
+  cursor: pointer;
+}
+
+
+
 
 /*FOOTER=============================================================*/
 .footer {
