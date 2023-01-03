@@ -11,4 +11,8 @@ if(button_open){
 const linkAction = () =>{
     nav.classList.remove('activo');
 }
-navLink.forEach(n => n.addEventListener('click', linkAction))
+navLink.forEach(n => n.addEventListener('click', linkAction));
+
+
+const year = document.querySelector('#current-year');
+year.innerHTML = new Date().getFullYear();

@@ -24,11 +24,13 @@ body {
 
 /*HEADER=============================================================*/
 .header {
-  max-height: 48px;
+  width: 100%;
+  height: 48px;
   display: flex;
   align-items: center;
   justify-content: space-between;
   padding: 0.5rem 0;
+  background-color: var(--bg-color);
 }
 
 .header__img,
@@ -100,13 +102,6 @@ body {
   border-radius: 0.5rem;
   background-color: var(--primary-color);
 }
-
-
-
-
-
-
-
 
 
 /*MAIN=============================================================*/
@@ -241,7 +236,7 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  margin-top: 2.5rem;
+  margin-top: 2.5rem;  
 }
 
 .about__texto {
@@ -504,3 +499,5 @@ body {
   color: var(--text-color);
   background-color: var(--bg-card-color);
 }
+
+/*RESPONSIVE=============================================================*/
