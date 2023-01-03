@@ -135,19 +135,17 @@ body {
   width: 35%;
   margin: 2rem 0;
   border-radius: 50%;
-  box-shadow: 0 0 0 10px var(--primary-color), 0 0 0 10px var(--primary-color),
-    0 0 0 10px rgba(39, 179, 154, 50%);
+  box-shadow: 0 0 0 0.8rem var(--primary-color), 0 0 0 0.8rem var(--primary-color),
+    0 0 0 0.8rem rgba(39, 179, 154, 50%);
   animation: circle-wave 2s linear infinite;
 }
 
 @keyframes circle-wave {
   from {
-    box-shadow: 0 0 0 10px var(--primary-color),
-      0 0 10px 10px var(--primary-color), 0 0 0 10px rgba(39, 179, 154, 50%);
+    box-shadow: 0 0 0 0.8rem var(--primary-color), 0 0 0.5rem 0.8rem var(--primary-color), 0 0 0 0.8rem rgba(39, 179, 154, 50%);
   }
   to {
-    box-shadow: 0 0 0 10px var(--primary-color),
-      0 0 10px 10px var(--primary-color), 0 0 0 30px rgba(39, 179, 154, 0%);
+    box-shadow: 0 0 0 0.8rem var(--primary-color), 0 0 0.5rem 0.8rem var(--primary-color), 0 0 0 2.2rem rgba(39, 179, 154, 0%);
   }
 }
 
@@ -200,7 +198,7 @@ body {
 }
 .social-link img:hover {
   transform: scale(1.1,1.1);
-  box-shadow: 0 0 5px 0 #000000;
+  box-shadow: 0 0 0.3rem 0 #000000;
 }
 
 .seccion {
@@ -209,6 +207,7 @@ body {
   flex-direction: column;
   align-items: center;
   padding: 2rem 0;
+  margin-top: 2rem;
 }
 
 .seccion__titulo {
@@ -223,7 +222,7 @@ body {
   width: 50%;
   height: 0.3rem;
   background-color: var(--primary-color);
-  box-shadow: 0 0 10px 0 var(--primary-color);
+  box-shadow: 0 0 0.7rem 0 var(--primary-color);
 }
 
 .card {
@@ -281,7 +280,7 @@ body {
 }
 
 .skills__item:hover {
-  box-shadow: 0 0 8px 1px var(--primary-color);
+  box-shadow: 0 0 0.7rem var(--primary-color);
 }
 
 .skills__item img {
@@ -366,6 +365,15 @@ body {
   margin-bottom: 0.5rem;
 }
 
+.experience__item-box{
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  gap: 0.5rem;
+}
+
 .experience__item-title {
   color: var(--primary-color);
   font-size: 1.15rem;
@@ -412,6 +420,7 @@ body {
 
 .experience__item-button {
   text-decoration: none;
+  text-align: center;
   font-weight: 500;
   color: var(--text-color);
   background-color: var(--primary-color);
@@ -443,7 +452,7 @@ body {
 }
 
 .contact__form{
-  width: 90%;
+  width: 80%;
   margin: 0 auto;
   display: flex;
   flex-direction: column;
@@ -483,7 +492,7 @@ body {
     box-shadow: 0 0 0 0 rgba(39, 179, 154, 50%);
   }
   to {
-    box-shadow: 0 0 0 15px rgba(39, 179, 154, 0%);
+    box-shadow: 0 0 0 1rem rgba(39, 179, 154, 0%);
   }
 }
 
@@ -501,3 +510,162 @@ body {
 }
 
 /*RESPONSIVE=============================================================*/
+@media screen and (width >= 720px){
+  html{
+    font-size: 16px;
+  }
+
+  .header{
+    height: 56px;
+  }
+  .nav{
+    margin-top: 56px;
+  }
+
+  .titulo__descripcion{
+    width: 70%;
+  }
+
+  .skills__item{
+    max-width: 150px;
+  }
+  
+  .academic__list{
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: baseline;
+  }
+  .academic__item{
+    width: 40%;
+  }
+  .academic__item-img{
+    width: 90%;
+  }
+
+  .experience__item{
+    width: 90%;
+    flex-direction: row;
+    justify-content: space-around;    
+  }
+
+  .item-right{
+    flex-direction: row-reverse;    
+  }
+
+  .experience__item-img{
+    max-width: 400px;
+    width: 50%;
+  }
+  .experience__item-box{
+    width: 45%;
+  }
+
+  .item__tools-list{
+    width: 90%;
+    justify-content: space-around;
+  }
+  
+  .experience__item-container{
+    width: 100%;
+  }
+
+  .contact__form{
+    max-width: 512px;
+  }
+      
+}
+
+@media screen and (width >= 1024px){
+  
+  .header__toggle{
+    display: none;
+  }
+  .nav{
+    width: auto;
+    position: relative;
+    margin-top: 0;
+    z-index: 0;
+  }
+  .nav__list{
+    padding: 0;
+    flex-direction: row;
+    gap: 0;
+  }
+
+  .header__img{
+    margin-left: 1rem;
+  }
+  
+
+  .nav__link{
+    min-width: 0;
+    padding: 0;
+    background-color: transparent;
+    margin-right: 1.5rem;
+  }
+
+  .seccion__titulo{
+    font-size: 1.375rem;
+  }
+
+  .titulo{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    padding: 5rem 0;
+  }
+  .titulo__img-container{       
+    grid-row-start: 1;
+    grid-row-end: 3;    
+  }
+  .titulo__img{
+    max-width: 250px;
+    width: 50%;
+
+  }
+  .titulo__descripcion{
+    width: 80%;
+    align-self: end;    
+  }
+
+  .titulo__social{
+    width: 80%;
+    align-self: start;
+    border-radius: 0 0 1rem 1rem;    
+  }
+
+  .about,
+  .skills,
+  .academic,
+  .experience,
+  .contact{
+    max-width: 1220px;/*REVISAR SI COLOCAR MAXWISTH ASI ESTA BIEN Y LAS BARRAS DE TITULOS*/
+    width: 100%;
+  }
+
+  .skills__list{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 2rem;
+  }
+
+  .academic__item{
+    max-width: 400px;
+  }
+
+  .experience__item{
+    width: 100%;
+  }
+
+  .experience__item-img{
+    max-width: 45%;
+  }
+
+  .item__tools{
+    margin: 1rem 0
+  }
+
+}
